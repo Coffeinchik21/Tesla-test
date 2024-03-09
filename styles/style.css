@@ -1,22 +1,25 @@
-/* second-banner styles */
-.second-banner {
+.banner {
 	height: 710px;
 	width: 100%;
-	background-image: url(../public/images/banners/tesla-banner.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
-.second-banner__eclipse {
+.eclipse {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.4);
+}
+/* second-banner styles */
+.second-banner {
+	background-image: url(../public/images/banners/tesla-banner.jpg);
+}
+.second-banner__subholder {
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 	justify-items: center;
 	row-gap: 30px;
 }
-
 .second-banner__subtittle {
 	font-size: 35px;
 	color: #fefefefe;
