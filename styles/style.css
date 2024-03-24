@@ -40,6 +40,9 @@
 	opacity: 0.8;
 }
 /* purchase procedure */
+.purchase-procedure {
+	position: relative;
+}
 .purchase__tittle {
 	text-align: center;
 	margin-top: 130px;
@@ -137,7 +140,7 @@
 	background-image: url(../public/images/time-line/time-line-model-x.png);
 	z-index: -1;
 	top: 7%;
-	left: -13%;
+	left: -8%;
 }
 .tesla-model-s__gray {
 	position: absolute;
@@ -146,7 +149,7 @@
 	background-image: url(../public/images/time-line/time-line-model-s-gray.png);
 	z-index: -1;
 	top: 72%;
-	left: -13%;
+	left: -8%;
 }
 .tesla-model-s__red {
 	position: absolute;
