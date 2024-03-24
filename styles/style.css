@@ -1,3 +1,7 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 .banner {
 	height: 710px;
 	width: 100%;
@@ -34,4 +38,122 @@
 .second-banner__button:hover {
 	cursor: pointer;
 	opacity: 0.8;
+}
+/* purchase procedure */
+.purchase__tittle {
+	text-align: center;
+	margin-top: 130px;
+}
+.purchase-container {
+	position: relative;
+	display: grid;
+	justify-content: center;
+}
+.steps__container {
+	display: grid;
+	grid-template-columns: 1fr 110px 1fr;
+	grid-column-gap: 150px;
+	justify-items: center;
+	align-items: center;
+	grid-row-gap: 90px;
+	margin-top: 110px;
+	position: relative;
+	max-width: 1000px;
+}
+.steps__icon {
+	grid-column: 1/4;
+	width: 85px;
+	height: 85px;
+	background-color: #e60002;
+	border-radius: 50%;
+	box-shadow: 5px 6px 5px gray;
+	text-align: center;
+	color: white;
+	line-height: 85px;
+	font-size: 35px;
+}
+.content {
+	font-size: 17px;
+}
+.content__icons {
+	background-image: url(../public/images/sprites/pruchase-order-icons.png);
+	width: 85px;
+	height: 85px;
+	background-color: #f1f1f1;
+	border-radius: 50%;
+	border: 20px solid #f1f1f1;
+	box-shadow: 5px 6px 5px gray;
+}
+.car-selection__icon {
+	background-position: 5px;
+}
+.pre-payment__icon {
+	background-position: -72px;
+}
+.order__icon {
+	background-position: -157px;
+}
+.guarantee__icon {
+	background-position: -237px;
+}
+.delivery-time__icon {
+	background-position: -317px;
+}
+.delivery-process__icon {
+	background-position: -398px;
+}
+.transportation__icon {
+	background-position: -478px;
+}
+.customs-clearence__icon {
+	background-position: -558px;
+}
+.insurance__icon {
+	background-position: -638px;
+}
+.registration__icon {
+	background-position: -715px;
+}
+.content__before {
+	font-weight: bold;
+	justify-self: end;
+	text-align: right;
+}
+.content__after {
+	justify-self: start;
+}
+.red-line {
+	position: absolute;
+	width: 3px;
+	height: 100%;
+	background-color: #e60002;
+	left: 50%;
+	z-index: -1;
+}
+.tesla-model-x__black {
+	position: absolute;
+	width: 552px;
+	height: 380px;
+	background-image: url(../public/images/time-line/time-line-model-x.png);
+	z-index: -1;
+	top: 7%;
+	left: -13%;
+}
+.tesla-model-s__gray {
+	position: absolute;
+	width: 688px;
+	height: 456px;
+	background-image: url(../public/images/time-line/time-line-model-s-gray.png);
+	z-index: -1;
+	top: 72%;
+	left: -13%;
+}
+.tesla-model-s__red {
+	position: absolute;
+	width: 722px;
+	height: 348px;
+	background-image: url(../public/images/time-line/time-line-model-s-red.png);
+	z-index: -1;
+	top: 45%;
+	left: 72%;
 }
