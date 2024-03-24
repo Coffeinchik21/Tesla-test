@@ -461,8 +461,10 @@ body {
 .footer {
 	background-color: #f1f1f1;
 	padding-top: 5%;
+	grid-gap: 20px;
 }
 .info {
+	padding-left: 15px;
 	display: grid;
 	grid-template-columns: 1fr;
 }
@@ -515,4 +517,65 @@ footer > div > div > div:first-child a > span {
 	margin: 25px 5px;
 	display: grid;
 	grid-template-columns: repeat(3, 60px);
+}
+
+.category {
+	padding-left: 15px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 991px) {
+	.category {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (max-width: 449px) {
+	.category {
+		grid-template-columns: 1fr;
+	}
+}
+.nav-footer {
+	font-family: 'GothamProRegular';
+}
+.nav-footer a {
+	color: #383839;
+	display: block;
+	text-decoration: none;
+}
+.nav-footer li {
+	display: block;
+	font-size: 14px;
+	font-weight: 400;
+	padding-bottom: 15px;
+	text-transform: initial;
+}
+.under-title {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 700;
+	list-style: none;
+	padding-bottom: 30px;
+	text-transform: uppercase;
+}
+.disclaimer {
+	grid-column: 1 / -1;
+}
+.disclaimer span {
+	display: block;
+	font-size: 12px;
+	margin: 30px 0 10px;
+	text-transform: uppercase;
+	color: #8a8888;
+	padding-left: 5px;
+}
+.disclaimer p {
+	font-size: 12px;
+	margin: 0;
+	color: #8a8888;
+	padding-left: 5px;
+}
+.copyright {
+	margin: 0;
+	padding: 40px 0;
+	color: #383838;
 }
