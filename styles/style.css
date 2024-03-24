@@ -93,9 +93,11 @@ body {
 	z-index: 1;
 	position: relative;
 }
-
-.category-title {
+.banner .category-title {
 	padding: 135px 0 60px;
+}
+.category-title {
+	padding: 0 60px;
 	font-family: 'GothamProLight';
 	font-size: 40px;
 	margin: 0;
@@ -363,7 +365,12 @@ body {
 		width: 220px;
 	}
 }
-
+.news {
+	margin: 150px 0;
+}
+.news h2 {
+	margin: 0 0 60px;
+}
 .news-element {
 	float: left;
 	position: relative;
@@ -450,26 +457,62 @@ body {
 	position: absolute;
 }
 
-
-
-
-
 /* FOOTER */
-
+.footer {
+	background-color: #f1f1f1;
+	padding-top: 5%;
+}
+.info {
+	display: grid;
+	grid-template-columns: 1fr;
+}
 
 .img-responsive {
-    display: block;
-    max-width: 100%;
-    height: auto;
-		width: 150px;
+	display: block;
+	max-width: 100%;
+	height: auto;
+	width: 150px;
 }
-.mail, .logo, .phone, .address, footer > div > div > div:first-child a > span {
-    display: block;
-    color: #383838;
-    font-size: 16px;
-    margin: 0;
-    padding-left: 45px;
-    position: relative;
-    text-decoration: none;
-    width: 225px;
+.mail,
+.logo,
+.phone,
+.address,
+footer > div > div > div:first-child a > span {
+	display: block;
+	color: #383838;
+	font-size: 16px;
+	margin: 0;
+
+	position: relative;
+	text-decoration: none;
+
+	font-family: 'GothamProRegular';
+}
+.logo,
+.mail,
+.phone,
+.address {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.icon {
+	margin-right: 5px;
+}
+
+.social-logo {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.social-img {
+	background-color: #333333;
+	border-radius: 6px;
+	margin-right: 10px;
+}
+
+.social-link {
+	margin: 25px 5px;
+	display: grid;
+	grid-template-columns: repeat(3, 60px);
 }
