@@ -559,6 +559,7 @@ footer > div > div > div:first-child a > span {
 }
 .disclaimer {
 	grid-column: 1 / -1;
+	line-height: 1.42857143;
 }
 .disclaimer span {
 	display: block;
@@ -575,7 +576,18 @@ footer > div > div > div:first-child a > span {
 	padding-left: 5px;
 }
 .copyright {
+	grid-column: 1 /-1;
+	text-align: center;
 	margin: 0;
 	padding: 40px 0;
 	color: #383838;
+	font-family: 'GothamProRegular';
+}
+.row-footer {
+	grid-template-columns: 1fr 2fr;
+}
+@media (max-width: 1200px) {
+	.row-footer {
+		grid-template-columns: none;
+	}
 }
