@@ -549,7 +549,7 @@ footer > div > div > div:first-child a > span {
 	padding-bottom: 15px;
 	text-transform: initial;
 }
-.under-title {
+.upper-title {
 	display: inline-block;
 	font-size: 18px;
 	font-weight: 700;
@@ -560,6 +560,7 @@ footer > div > div > div:first-child a > span {
 .disclaimer {
 	grid-column: 1 / -1;
 	line-height: 1.42857143;
+	width: 75%;
 }
 .disclaimer span {
 	display: block;
@@ -587,6 +588,9 @@ footer > div > div > div:first-child a > span {
 	grid-template-columns: 1fr 2fr;
 }
 @media (max-width: 1200px) {
+	.disclaimer {
+		width: 100%;
+	}
 	.row-footer {
 		grid-template-columns: none;
 	}
