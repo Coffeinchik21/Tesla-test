@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 100px;
+    display: grid;
+    grid-template-columns: 140px 1fr 240px;
+    background-color: #d0d0d0;
+}
+.logo{
+    display: grid;
+}
+.logo__link{
+    display: grid;
+}
+.logo__link img{
+    justify-self: end;
+    align-self: center;
+    height: 67px;
+}
+
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.menu__link{
+    display: grid;
+    justify-self: stretch;
+    align-self: stretch;
+}
+.menu__link span{
+    align-self: center;
+    justify-self: center;
+}
+
+.contact{
+    display: grid;
+    justify-items: start;
+    align-items: center;
+}
