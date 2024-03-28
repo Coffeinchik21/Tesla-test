@@ -2,12 +2,17 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: 'Gotham';
+    src: url("/public/fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+  }
 .header{
-    height: 100px;
+    height: 97px;
     display: grid;
-    grid-template-columns: 140px 1fr 240px;
-    background-color: #d0d0d0;
+    grid-template-columns: minmax(max-content, 140px) 1fr minmax(max-content, 240px);
+    background-color: #ededed;
 }
+/*Logo*/
 .logo{
     display: grid;
 }
@@ -19,24 +24,34 @@
     align-self: center;
     height: 67px;
 }
-
-
+/*Menu*/
 .menu{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, min-content);
+    justify-content: center;
 }
 .menu__link{
     display: grid;
     justify-self: stretch;
     align-self: stretch;
+    text-decoration: none;
+    font-family: 'Gotham';
+    font-size: 16px;
+    color: #605e5f;
 }
-.menu__link span{
+.menu__link-item{
     align-self: center;
     justify-self: center;
 }
-
-.contact{
+/*Contact number*/
+.contact-number{
     display: grid;
-    justify-items: start;
-    align-items: center;
+    justify-content: start;
+    align-content: center;
+    text-decoration: none;
+}
+.contact-number__item{
+    font-family: "Gotham";
+    font-size: 20px;
+    color: black;
 }
