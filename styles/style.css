@@ -2,12 +2,33 @@
 	margin: 0;
 	padding: 0;
 }
+h1 {
+	font-weight: 100;
+	font-size: 50px;
+}
 .banner {
 	height: 710px;
 	width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+.banners-button {
+	padding: 20px 90px;
+	background-color: #e60002;
+	color: #fefefefe;
+	border: none;
+	border-radius: 5%;
+	font-weight: bold;
+	font-size: 18px;
+}
+.banners-button:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+/*animation*/
+.active {
+	background-color: black;
 }
 /* second-banner styles */
 .second-banner {
@@ -28,17 +49,7 @@
 	text-align: center;
 	align-self: end;
 }
-.second-banner__button {
-	padding: 11px 56px;
-	background-color: #e60002;
-	color: #fefefefe;
-	border: none;
-	border-radius: 5%;
-}
-.second-banner__button:hover {
-	cursor: pointer;
-	opacity: 0.8;
-}
+
 /* purchase procedure */
 .purchase-procedure {
 	position: relative;
@@ -159,4 +170,44 @@
 	z-index: -1;
 	top: 45%;
 	left: 72%;
+}
+/*compare styles*/
+.compare-tittle {
+	padding-top: 200px;
+	text-align: center;
+}
+.compare__container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	grid-column-gap: 150px;
+	padding-top: 100px;
+}
+.compare__subtittle {
+	text-align: center;
+	font-size: 32px;
+	font-weight: 100;
+	padding-bottom: 30px;
+}
+.europe-car__container {
+	justify-self: start;
+}
+.europe-car__icon {
+	background-image: url(../public/images/compare/workable_car.png);
+	width: 421px;
+	height: 185px;
+}
+.american-car__container {
+	justify-self: end;
+}
+.american-car__icon {
+	background-image: url(../public/images/compare/broken_car.png);
+	width: 421px;
+	height: 185px;
+}
+.compare__button-holder {
+	display: grid;
+	justify-items: center;
+	padding-top: 40px;
+	padding-bottom: 200px;
 }
