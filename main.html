@@ -26,9 +26,9 @@
 		</div>
 		<div class="purchase-procedure">
 			<h1 class="purchase__tittle">ПОРЯДОК ПРИДБАННЯ TESLA В УКРАЇНІ</h1>
-			<div class="purchase-container">
+			<div class="purchase-container" id="trigger1">
 				<div class="steps__container">
-					<div class="steps__icon first-steps__icon" id="trigger1">1</div>
+					<div class="first-steps__icon steps__icon" id="animate1">1</div>
 					<div class="content content__before car-selection__before">
 						Вибір автомобіля та комплектації 2020
 					</div>
@@ -47,7 +47,9 @@
 						розрахунок та надасть всю дорожню карту витрат на обрану версію
 						електрокара
 					</div>
-					<div class="content content__before order__before">Замовлення</div>
+					<div class="content content__before order__before" id="trigger2">
+						Замовлення
+					</div>
 					<div class="content__icons order__icon"></div>
 					<div class="content content__after order__after">
 						<strong>Tesla Club Ukraine</strong> замовляє з заводу обрану вами
@@ -62,8 +64,11 @@
 						- 240 тис.км) <br /><br />
 						*Model S та X - із пожиттєвим безкоштовним суперчарджером!
 					</div>
-					<div class="steps__icon first-steps__icon">2</div>
-					<div class="content content__before delivery-time__before">
+					<div class="steps__icon second-steps__icon" id="animate2">2</div>
+					<div
+						class="content content__before delivery-time__before"
+						id="trigger3"
+					>
 						Термін доставки
 					</div>
 					<div class="content__icons delivery-time__icon"></div>
@@ -75,8 +80,11 @@
 						Tesla. В такому випадку термін доставки -
 						<strong>4-8 тижнів</strong>
 					</div>
-					<div class="steps__icon first-steps__icon">3</div>
-					<div class="content content__before delivery-process__before">
+					<div class="steps__icon third-steps__icon" id="animate3">3</div>
+					<div
+						class="content content__before delivery-process__before"
+						id="trigger4"
+					>
 						Автомобіль виготовляється в Каліфорнії, доставляється в м.Тілбург,
 						Нідерланди
 					</div>
@@ -86,7 +94,7 @@
 						повну вартість авто (у визначений термін), після чого автомобіль
 						стає доступним для транспортування в Україну.
 					</div>
-					<div class="steps__icon first-steps__icon">4</div>
+					<div class="steps__icon fourth-steps__icon" id="animate4">4</div>
 					<div class="content content__before transportation__before">
 						Транспортування з Європи
 					</div>
@@ -159,6 +167,8 @@
 		<div></div>
 		<div></div>
 		<footer></footer>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 		<script src="js/main script.js"></script>
 		<script src="js/scroll animation.js"></script>
 	</body>

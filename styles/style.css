@@ -26,10 +26,7 @@ h1 {
 	cursor: pointer;
 	opacity: 0.8;
 }
-/*animation*/
-.active {
-	background-color: black;
-}
+
 /* second-banner styles */
 .second-banner {
 	background-image: url(../public/images/banners/tesla-banner.jpg);
@@ -78,7 +75,6 @@ h1 {
 	grid-column: 1/4;
 	width: 85px;
 	height: 85px;
-	background-color: #e60002;
 	border-radius: 50%;
 	box-shadow: 5px 6px 5px gray;
 	text-align: center;
@@ -86,6 +82,19 @@ h1 {
 	line-height: 85px;
 	font-size: 35px;
 }
+.first-steps__icon,
+.second-steps__icon,
+.third-steps__icon,
+.fourth-steps__icon {
+	background-color: #ec0206;
+}
+.first-steps__icon,
+.second-steps__icon,
+.third-steps__icon,
+.fourth-steps__icon {
+	transition: 0.6s;
+}
+
 .content {
 	font-size: 17px;
 }
@@ -140,7 +149,7 @@ h1 {
 	position: absolute;
 	width: 3px;
 	height: 100%;
-	background-color: #e60002;
+	background-color: #f27f80;
 	left: 50%;
 	z-index: -1;
 }
