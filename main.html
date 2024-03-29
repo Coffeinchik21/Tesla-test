@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="styles/style.css" />
 		<link rel="stylesheet" type="text/css" href="styles/reset.css" />
 		<link rel="stylesheet" type="text/css" href="styles/fonts.css" />
+
 		<title>Tesla</title>
 	</head>
 	<body>
@@ -13,7 +14,7 @@
 		<div></div>
 		<div></div>
 		<div></div>
-		<!-- <div class="second-banner banner">
+		<div class="second-banner banner">
 			<div class="second-banner__subholder eclipse">
 				<div class="second-banner__subtittle">
 					Ідеальний зарядний пристрій <br />
@@ -25,13 +26,13 @@
 					</button>
 				</div>
 			</div>
-		</div> -->
+		</div>
 		<div></div>
 		<div></div>
 		<div id="thirdBanner" class="banner third third-banner">
 			<h2 class="category-title">Наші послуги при замовленні</h2>
-			<div class="container">
-				<div class="row">
+			<div class="container grid-container">
+				<div class="row reveal">
 					<div class="service step-one">
 						<div class="title">Доставка "під ключ"</div>
 						<p>
@@ -48,7 +49,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row reveal2">
 					<div class="service step-three">
 						<div class="title">Експертиза та спосіб заряджання</div>
 						<p>
@@ -100,7 +101,7 @@
 				loading="lazy"
 				referrerpolicy="no-referrer-when-downgrade"
 			></iframe>
-			<div class="join">
+			<div class="join reveal3">
 				<p>Ваш бізнес може стати партнером платформи GO TO-U</p>
 				<a onclick="location.href" class="button active" target="_blank"
 					>Приєднатися</a
@@ -110,7 +111,7 @@
 		<div class="news">
 			<h2 class="category-title">Новини</h2>
 			<div class="container">
-				<div class="row row-news">
+				<div class="row row-news reveal4">
 					<div class="news-elements">
 						<div class="item">
 							<img
@@ -186,7 +187,7 @@
 						/></a>
 
 						<a class="mail" href="mailto:mail@tesla-club.com.ua"
-							><span itemprop="email">
+							><span>
 								<img
 									class="icon"
 									src="/public/images/sprites/mailIcon.webp"
@@ -196,7 +197,7 @@
 							></a
 						>
 						<a class="phone" href="tel:+380985711414"
-							><span itemprop="telephone">
+							><span>
 								<img
 									class="icon"
 									src="/public/images/sprites/phoneIcon.webp"
@@ -413,6 +414,9 @@
 				</div>
 			</div>
 		</footer>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 		<script src="js/main script.js"></script>
+		<script src="js/animation.js"></script>
 	</body>
 </html>

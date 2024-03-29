@@ -17,7 +17,6 @@ h6,
 }
 
 body {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.42857143;
 	color: #333333;
@@ -50,6 +49,7 @@ body {
 }
 
 .second-banner__subtittle {
+	font-family: 'GothamProMedium';
 	font-size: 35px;
 	color: #fefefefe;
 	text-align: center;
@@ -594,4 +594,46 @@ footer > div > div > div:first-child a > span {
 	.row-footer {
 		grid-template-columns: none;
 	}
+}
+
+
+.reveal {
+	opacity: 0;
+	transform: scale(0.9);
+	transition: all 1s ease-in-out;
+}
+
+.reveal.visible {
+	opacity: 1;
+	transform: none;
+}
+.reveal2 {
+	opacity: 0;
+	transform: scale(0.9);
+	transition: all 1s ease-in-out;
+}
+
+.reveal2.visible {
+	opacity: 1;
+	transform: none;
+}
+.reveal3 {
+	opacity: 0;
+	transform: scale(0.9);
+	transition: all 1s ease-in-out;
+}
+
+.reveal3.visible {
+	opacity: 1;
+	transform: none;
+}
+.reveal4 {
+	opacity: 0;
+	transform: scale(0.9);
+	transition: all 1s ease-in-out;
+}
+
+.reveal4.visible {
+	opacity: 1;
+	transform: none;
 }
