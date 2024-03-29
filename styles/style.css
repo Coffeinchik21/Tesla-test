@@ -7,10 +7,12 @@
     src: url("/public/fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
   }
 .header{
-    height: 97px;
+    height: 100px;
     display: grid;
-    grid-template-columns: minmax(max-content, 140px) 1fr minmax(max-content, 240px);
-    background-color: #ededed;
+    grid-template-columns: minmax(max-content, 180px) minmax(max-content, 1fr) minmax(max-content, 280px);
+    gap: 10px;
+    justify-content: center;
+    font-family: 'Gotham';
 }
 /*Logo*/
 .logo{
@@ -18,40 +20,133 @@
 }
 .logo__link{
     display: grid;
+    justify-items: end;
+    align-items: center;
 }
 .logo__link img{
-    justify-self: end;
-    align-self: center;
     height: 67px;
 }
 /*Menu*/
 .menu{
     display: grid;
-    grid-template-columns: repeat(6, min-content);
+    grid-template-columns: repeat(6, max-content);
+    gap: 70px;
     justify-content: center;
+    justify-items: stretch;
+    align-items: stretch;
 }
 .menu__link{
     display: grid;
-    justify-self: stretch;
-    align-self: stretch;
     text-decoration: none;
-    font-family: 'Gotham';
-    font-size: 16px;
+    align-items: center;
+    font-size: 18px;
     color: #605e5f;
 }
-.menu__link-item{
-    align-self: center;
-    justify-self: center;
+.menu__link:hover{
+    color: #e60002;
 }
+.menu__link:active{
+    color: #e60002;
+}
+
 /*Contact number*/
 .contact-number{
     display: grid;
-    justify-content: start;
-    align-content: center;
+    justify-items: start;
+    align-items: center;
     text-decoration: none;
-}
-.contact-number__item{
-    font-family: "Gotham";
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: bold;
     color: black;
+
+}
+/*burger menu*/
+.burger-btn, .burger-menu{
+    display: none;
+}
+
+@media (min-width:1401px) and (max-width:1510px){
+    .menu{
+        gap: 50px;
+    }
+    .menu__link{
+        font-size: 17px;
+    }
+    .contact-number{
+        font-size: 21px;
+    }
+}
+@media (min-width:1201px) and (max-width:1400px){
+    .header{
+        grid-template-columns: minmax(max-content, 140px) minmax(max-content, 1fr) minmax(max-content, 254px);
+    }
+    .menu{
+        gap: 40px;
+    }
+    .menu__link{
+        font-size: 16px;
+    }
+    .contact-number{
+        font-size: 21px;
+    }
+}
+@media (min-width:991px) and (max-width:1200px){
+    .header{
+        grid-template-columns: minmax(max-content, 130px) minmax(max-content, 1fr) minmax(max-content, 215px);
+    }
+    .menu{
+        gap: 10px;
+    }
+    .menu__link{
+        font-size: 16px;
+    }
+    .contact-number{
+        font-size: 19px;
+    }
+}
+@media (max-width: 990px){
+    .menu{
+        display: none;
+    }
+    .contact-number{
+        display: none;
+    }
+    .header{
+        height: 97px;
+        grid-template-columns: 145px 1fr 100px;
+        gap: 0;
+    }
+    .logo__link{
+        justify-items: center;
+    }
+    /*Бургер кнопка і меню*/
+    .burger-btn{
+        display: grid;
+        cursor: pointer;
+        grid-column: 3;
+        justify-items: center;
+        align-items: center;
+    }
+    .burger-menu{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 40px);
+        font-family: 'Gotham';
+    }
+    .menu__link{
+        padding-left: 30px;
+    }
+    .burger__contact-number{
+        font-family: "Gotham";
+        font-weight: bold;
+        font-size: 22px;
+        color: black;
+        text-decoration: none;
+        align-self: center;
+        padding-left: 30px;
+    }
+    .burger-btn__active{
+    }
+    .burger-menu__active{
+        display: grid;
+    }
 }
