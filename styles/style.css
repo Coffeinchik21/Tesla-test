@@ -13,6 +13,10 @@
     gap: 10px;
     justify-content: center;
     font-family: 'Gotham';
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 3;
 }
 /*Logo*/
 .logo{
@@ -126,11 +130,13 @@
         grid-column: 3;
         justify-items: center;
         align-items: center;
+        z-index: 5;
     }
     .burger-menu{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(7, 40px);
         font-family: 'Gotham';
+        
     }
     .menu__link{
         padding-left: 30px;
@@ -148,5 +154,11 @@
     }
     .burger-menu__active{
         display: grid;
+        padding-top: 97px;
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+        background-color: #fff;
     }
+   
 }
