@@ -52,7 +52,10 @@ h1 {
 
 /* purchase procedure */
 .purchase-procedure {
-	position: relative;
+
+	display: grid;
+	grid-template-rows: auto auto;
+	justify-items: center;
 }
 .purchase__tittle {
 	text-align: center;
@@ -64,20 +67,35 @@ h1 {
 .purchase-container {
 	position: relative;
 	display: grid;
-	justify-content: center;
-	overflow: hidden;
+	justify-items: center;
+
 }
 .steps__container {
 	display: grid;
+	grid-template-columns: 1fr minmax(160px, 1fr) 1fr;
+	justify-items: center;
+	align-items: center;
+	grid-row-gap: 90px;
+	margin-top: 110px;
+	position: relative;
+	max-width: 1010px;
+}
+.purchase-container2 {
+
+	display: grid;
+	justify-items: center;
+
+}
+.steps__container2 {
+	display: grid;
+	margin-top: 90px;
 	grid-template-columns: 1fr 0.5fr 1fr;
 	grid-column-gap: 90px;
 	justify-items: center;
 	align-items: center;
 	grid-row-gap: 90px;
-	margin-top: 110px;
-	margin-bottom: 30px;
-	position: relative;
 	max-width: 1010px;
+	margin-bottom: 5px;
 }
 .steps__icon {
 	grid-column: 1/4;
@@ -161,13 +179,9 @@ h1 {
 	justify-self: start;
 	padding-right: 15px;
 }
-@media (max-width: 767px) {
-	.steps__container {
-		gap: 0 0;
-		grid-template-columns: 1fr 3fr;
-		grid-template-rows: auto;
-	}
-}
+
+
+
 .red-line {
 	position: absolute;
 	width: 3px;
@@ -176,11 +190,6 @@ h1 {
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: -1;
-}
-@media (max-width: 767px) {
-	.red-line {
-		left: 7%;
-	}
 }
 .tesla-model-x__black {
 	position: absolute;
@@ -859,4 +868,92 @@ footer > div > div > div:first-child a > span {
 .reveal4.visible {
 	opacity: 1;
 	transform: none;
+}
+@media (max-width: 767px) {
+	.first-steps__icon{grid-area: zxc1;
+		justify-self: start;}
+	.car-selection__icon{grid-area: zxc2;}
+	.pre-payment__icon{grid-area: zxc3;}
+	.order__icon{grid-area: zxc4;}
+	.guarantee__icon{grid-area: zxc5;}
+	.second-steps__icon{grid-area: zxc6;}
+	.delivery-time__icon{grid-area: zxc7;}
+	.third-steps__icon{grid-area: zxc8;}
+	.delivery-process__icon{grid-area: zxc9;}
+	.fourth-steps__icon{grid-area: zxc10;}
+	.transportation__icon{grid-area: zxc11;}
+	.customs-clearence__icon{grid-area: zxc12;}
+	.insurance__icon{grid-area: zxc13;}
+	.registration__icon{grid-area: zxc14;}
+	.car-selection__before{grid-area: zxc15;
+		justify-self: start;
+		align-self: center;}
+	.car-selection__after{grid-area: zxc16;
+		justify-self: center;
+		align-self: center;}
+	.pre-payment__before{grid-area: zxc17;}
+	.pre-payment__after{grid-area: zxc18;}
+	.order__before{grid-area: zxc19;}
+	.order__after{grid-area: zxc20;}
+	.guarantee__before{grid-area: zxc21;}
+	.guarantee__after{grid-area: zxc22;}
+	.delivery-time__before{grid-area: zxc23;}
+	.delivery-time__after{grid-area: zxc24;}
+	.delivery-process__before{grid-area: zxc25;}
+	.delivery-process__after{grid-area: zxc26;}
+	.transportation__before{grid-area: zxc27;}
+	.transportation__after{grid-area: zxc28;}
+	.customs-clearence__before{grid-area: zxc29;}
+	.customs-clearence__after{grid-area: zxc30;}
+	.insurance__before{grid-area: zxc31;}
+	.insurance__after{grid-area: zxc32;}
+	.car-selection__before2{grid-area: zxc33;}
+	.car-selection__after2{grid-area: zxc34;}
+	.registration__before{grid-area: zxc35;}
+	.registration__after{grid-area: zxc36;}
+
+	.purchase-container{
+		display: grid;
+		grid-template-rows: auto;
+	}
+	.steps__container {
+		gap: 0 0;
+		grid-template-columns: 1fr 3fr;
+		grid-template-rows: repeat(22, auto);
+		grid-template-areas: 
+		"zxc1 zxc1"
+		"zxc2 zxc15"
+		"zxc2 zxc16"
+		"zxc3 zxc17"
+		"zxc3 zxc18"
+		"zxc4 zxc19"
+		"zxc4 zxc20"
+		"zxc5 zxc21"
+		"zxc5 zxc22"
+		"zxc6 zxc6"
+		"zxc7 zxc23"
+		"zxc7 zxc24"
+		"zxc8 zxc8"
+		"zxc9 zxc25"
+		"zxc9 zxc26"
+		"zxc10 zxc10"
+		"zxc11 zxc27"
+		"zxc11 zxc28"
+		"zxc12 zxc29"
+		"zxc12 zxc30"
+		"zxc13 zxc31"
+		"zxc13 zxc32"
+		;
+	}
+	.steps__container2{
+		margin-top: 4px;
+		gap: 0 0;
+		grid-template-columns: 1fr 3fr;
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas: 
+		"zxc14 zxc33"
+		"zxc14 zxc34"
+		"zxc2 zxc35"
+		"zxc2 zxc36";
+	}
 }
