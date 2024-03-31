@@ -1,7 +1,6 @@
 * {
 	margin: 0;
 	padding: 0;
-	overflow-x: clip;
 }
 h1 {
 	font-weight: 100;
@@ -66,6 +65,7 @@ h1 {
 	position: relative;
 	display: grid;
 	justify-content: center;
+	overflow: hidden;
 }
 .steps__container {
 	display: grid;
@@ -75,6 +75,7 @@ h1 {
 	align-items: center;
 	grid-row-gap: 90px;
 	margin-top: 110px;
+	margin-bottom: 30px;
 	position: relative;
 	max-width: 1000px;
 }
@@ -104,7 +105,8 @@ h1 {
 
 .content {
 	font-size: 20px;
-	font-family: 'GothamProLight';
+	line-height: 24px;
+	font-family: 'GothamProRegular';
 }
 .content__icons {
 	background-image: url(../public/images/sprites/pruchase-order-icons.png);
@@ -148,13 +150,18 @@ h1 {
 	align-self: end;
 }
 .content__before {
+	font-family: 'GothamProMedium';
 	font-weight: bold;
 	justify-self: end;
 	text-align: right;
 }
 .content__after {
+	color: #383838;
+	font-size: 16px;
 	justify-self: start;
+	padding-right: 15px;
 }
+
 .red-line {
 	position: absolute;
 	width: 3px;
@@ -189,7 +196,7 @@ h1 {
 	background-image: url(../public/images/time-line/time-line-model-s-red.png);
 	z-index: -1;
 	top: 45%;
-	left: 72%;
+	right: -10%;
 }
 /*compare styles*/
 .compare-tittle {
@@ -203,7 +210,8 @@ h1 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	justify-items: center;
-	grid-column-gap: 150px;
+	margin: 0 auto;
+	max-width: 1170px;
 	padding-top: 100px;
 }
 .compare__subtittle {
@@ -212,23 +220,18 @@ h1 {
 	font-weight: 100;
 	padding-bottom: 30px;
 	font-family: 'GothamProLight';
+	margin-bottom: 30px;
 }
-.europe-car__container {
-	justify-self: start;
+.car__container {
+	padding-left: 15px;
+	padding-right: 15px;
 }
-.europe-car__icon {
-	background-image: url(../public/images/compare/workable_car.png);
-	width: 421px;
-	height: 185px;
+
+.car__icon img {
+	width: 100%;
+	height: auto;
 }
-.american-car__container {
-	justify-self: end;
-}
-.american-car__icon {
-	background-image: url(../public/images/compare/broken_car.png);
-	width: 421px;
-	height: 185px;
-}
+
 .compare__button-holder {
 	display: grid;
 	justify-items: center;
@@ -247,11 +250,8 @@ h1 {
 	transition: height 0.2s ease; /* Плавна зміна висоти */
 }
 @media (max-width: 1200px) {
-	.tesla-model-x__black {
-		left: -20%;
-	}
-	.tesla-model-s__gray {
-		left: -29%;
+	.tesla__back {
+		display: none;
 	}
 }
 
@@ -259,13 +259,10 @@ h1 {
 	.steps__container {
 		grid-column-gap: 30px;
 	}
-	.tesla-model-s__gray,
-	.tesla-model-s__red,
-	.tesla-model-x__black {
-		display: none;
-	}
+
 	.compare__container {
 		grid-column-gap: 45px;
+		grid-template-columns: 1fr;
 	}
 }
 
