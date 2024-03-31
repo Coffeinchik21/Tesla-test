@@ -18,6 +18,14 @@
     background-color: transparent;
     z-index: 999;
 }
+.header--active{
+    background-color: #fff;
+    transition: 0.5s;
+}
+.menu__link-item--active{
+    color: #605e5f;
+    transition: 0.3s;
+}
 /*Logo*/
 .logo{
     display: grid;
@@ -44,7 +52,7 @@
     text-decoration: none;
     align-items: center;
     font-size: 18px;
-    color: #605e5f;
+    color: #fff;
 }
 .menu__link:hover{
     color: #e60002;
@@ -61,25 +69,50 @@
     text-decoration: none;
     font-size: 22px;
     font-weight: bold;
+    color: #fff;
+}
+.contact-number__item{
+    border: none;
+}
+.contact-number__item--active{
     color: black;
-
+    transition: 0.3s;
 }
 /*burger menu*/
 .burger-btn, .burger-menu{
     display: none;
 }
+.burger-menu--active{
+    display: grid;
+    padding-top: 97px;
+    position: fixed;
+    width: 100%;
+    z-index: 888;
+    background-color: #fff;
+}
+.burger-menu__link-item{
+    color: #605e5f;
+}
+.burger-menu__link-contact{
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+}
+.menu__link:active{
+    color: #e60002;
+}
 
 /*Video*/
-.full-screen{
+.video{
     position: relative;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: "Gotham";
 }
-.full-screen__body{
-    padding: 50px 15px;
-    background-color: rgba(0, 0, 0, 0.2);
+.video__body{
+    padding: 100px 15px;
+    background-color: rgba(0, 0, 0, 0.25);
     position: relative;
     z-index: 2;
     display: flex;
@@ -88,18 +121,33 @@
     align-items: center;
     flex-direction: column;
 }
-.full-screen__title{
+.video__title{
     font-size: 35px;
     font-weight: bold;
     margin-bottom: 20px;
     color: #fff;
+    text-align: center;
 }
-.full-screen__text{
+.video__btn{
     font-size: 22px;
     color: #fff;
-
+    background-color: #e60002;
+    font-weight: 400;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px 55px;
+    border: 1px;
+    border-radius: 4px;
 }
-.full-screen__video{
+.video__btn:hover{
+    background-color: #b50003;
+}
+.video__btn:active{
+    background-color: #b50003;
+    font-size: 20px;
+    margin-top: 22px;
+}
+.video__self{
     position: fixed;
     top: 0;
     left: 0;
@@ -107,12 +155,13 @@
     height: 100%;
     object-fit: cover;
 }
-.content{
+/*Перший блок*/
+.first-block{
     background-color: aqua;
     position: relative;
     z-index: 4;
 }
-.content__container{
+.first-block__container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 50px 15px;
@@ -190,24 +239,9 @@
     .menu__link{
         padding-left: 30px;
     }
-    .burger__contact-number{
-        font-family: "Gotham";
-        font-weight: bold;
-        font-size: 22px;
-        color: black;
-        text-decoration: none;
-        align-self: center;
-        padding-left: 30px;
-    }
-    .burger-btn__active{
-    }
-    .burger-menu__active{
-        display: grid;
-        padding-top: 97px;
-        position: absolute;
-        width: 100%;
-        z-index: 888;
-        background-color: #fff;
-    }
-   
 }
+
+
+
+
+
