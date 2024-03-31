@@ -19,15 +19,15 @@
     transition: 0.3s;
 }
 /*Logo*/
-.logo{
+.header-logo{
     display: grid;
 }
-.logo__link{
+.header-logo__link{
     display: grid;
     justify-items: end;
     align-items: center;
 }
-.logo__link img{
+.header-logo__link img{
     height: 67px;
 }
 /*Menu*/
@@ -148,17 +148,144 @@
 }
 /*Перший блок*/
 .first-block{
-    background-color: aqua;
+    background-color: #fff;
     position: relative;
     z-index: 4;
+    display: grid;
+    justify-content: center;
 }
 .first-block__container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 50px 15px;
-    font-size: 18px;
+    padding: 60px 15px;
+    display: grid;
+    grid-template-columns: minmax(485px, 555px) minmax(485px, 555px);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "ph1 c1"
+    "c2 ph2"
+    "ph3 c3"
+    "c4 ph4";
+    gap: 60px 45px;
+    justify-content: center;
+    align-items: center;
+}
+.first-block__container img{
+    width: 100%;
+    height: auto;
+}
+.first-block__card-conteiner{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    font-family: "GothamProRegular";
+    font-size: 16px;
+}
+.first-block__card-conteiner h2{
+    font-family: "GothamProMedium";
+    font-size: 30px;
+}
+.first-block__card-conteiner ul{
+    margin: 10px 0;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.first-block__card-conteiner li{
+    padding: 4px 0;
+}
+.first-block__card-delivery{
+    display: grid;
+    grid-template-columns: 70px 160px;
+    grid-template-rows: 32px 12px;
+    align-items: center;
+    background-color: #e9e9e9;
+    width: 230px;
+}
+.first-block__card-delivery img{
+    width: 35px;
+    padding: 0 13px;
+    grid-row: 1/3;
+}
+.first-block__card-delivery p{
+    align-self: flex-end;
+    margin-bottom: 4px;
+}
+.first-block__card-delivery span{
+    background-color: black;
+    width: 145px;
+    height: 1px;
+    align-self: flex-start;
+}
+.first-block__btn-conteiner{
+    font-size: 17px;
+    display: grid;
+    grid-template-columns: 124px 180px 152px;
+    grid-template-rows: 35px;
+    font-family: "GothamProMedium";
+    gap: 10px;
+}
+.first-block__btn1{
+    display: grid;
+    color: #fff;
+    background-color: #e60002;
+    text-decoration: none;
+    border: 1px;
+    border-radius: 4px;
+    justify-items: center;
+    align-items: center;
+}
+.first-block__btn1:hover{
+    background-color: #b50003;
+}
+.first-block__btn1:active{
+    background-color: #b50003;
+    font-size: 15px;
+}
+.first-block__btn23{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: #e60002;
+    background-color: #ffffff;
+    text-decoration: none;
+    border: 1px;
+    border: solid;
+    border-color: #e60002;
+    border-radius: 4px;
+}
+.first-block__btn23:hover{
+    background-color: #e60002;
+    color: #fff;
+}
+.first-block__btn23:active{
+    background-color: #b50003;
+    border-color: #b50003;
+    font-size: 15px;
 }
 
+.first-block__photo1{
+    grid-area: ph1;
+}
+.first-block__photo2{
+    grid-area: ph2;
+}
+.first-block__photo3{
+    grid-area: ph3;
+}
+.first-block__photo4{
+    grid-area: ph4;
+}
+.first-block__card1{
+    grid-area: c1;
+}
+.first-block__card2{
+    grid-area: c2;
+}
+.first-block__card3{
+    grid-area: c3;
+}
+.first-block__card4{
+    grid-area: c4;
+}
 
 
 
@@ -216,7 +343,7 @@
         grid-template-columns: 145px 1fr 100px;
         gap: 0;
     }
-    .logo__link{
+    .header-logo__link{
         justify-items: center;
     }
     /*Бургер кнопка і меню*/
@@ -235,6 +362,25 @@
     }
     .menu__link{
         padding-left: 30px;
+    }
+    .first-block__container{
+        grid-template-columns: minmax(290px, 750px);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "ph1"
+        "c1"
+        "ph2"
+        "c2"
+        "ph3"
+        "c3"
+        "ph4"
+        "c4";
+    }
+}
+@media (max-width: 510px){
+    .first-block__btn-conteiner{
+        grid-template-columns: 1fr;
+        grid-template-rows: 35px 35px 35px;
     }
 }
 
