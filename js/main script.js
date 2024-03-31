@@ -8,16 +8,13 @@ menuBtn.addEventListener('click', function(){
 var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 0, offset: 5}});
 
 	new ScrollMagic.Scene()
-					.setClassToggle(".header", "header--active") 
-					.addIndicators() 
+					.setClassToggle(".header", "header--active")  
 					.addTo(controller);
 	new ScrollMagic.Scene()
                     .setClassToggle(".menu__link-item", "menu__link-item--active")
-					.addIndicators() 
 					.addTo(controller);
     new ScrollMagic.Scene()
                     .setClassToggle(".contact-number__item", "contact-number__item--active")
-					.addIndicators() 
 					.addTo(controller);
 
 
