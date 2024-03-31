@@ -84,11 +84,12 @@
 }
 .burger-menu__link-item{
     color: #605e5f;
+    font-family: "GothamProRegular";
 }
 .burger-menu__link-contact{
     color: black;
     font-size: 22px;
-    font-family: "GothanProMedium";
+    font-family: "GothamProMedium";
 }
 .menu__link:active{
     color: #e60002;
