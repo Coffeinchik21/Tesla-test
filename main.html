@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="styles/style.css" />
+		<link rel="stylesheet" type="text/css" href="styles/reset.css" />
+		<link rel="stylesheet" type="text/css" href="styles/fonts.css" />
 		<title>Tesla</title>
 	</head>
 	<body>
@@ -30,7 +32,8 @@
 				<div class="steps__container">
 					<div class="first-steps__icon steps__icon" id="animate1">1</div>
 					<div class="content content__before car-selection__before">
-						Вибір автомобіля та комплектації 2020
+						Вибір автомобіля<br />
+						та комплектації 2020
 					</div>
 					<div class="content__icons car-selection__icon"></div>
 					<div class="content content__after car-selection__after">
@@ -43,9 +46,9 @@
 					</div>
 					<div class="content__icons pre-payment__icon"></div>
 					<div class="content content__after pre-payment__after">
-						Менеджер <strong>Tesla Club Ukraine</strong> зробить для вас
-						розрахунок та надасть всю дорожню карту витрат на обрану версію
-						електрокара
+						Менеджер <span class="bold-text">Tesla Club Ukraine</span> зробить
+						для вас розрахунок та надасть всю дорожню карту витрат на обрану
+						версію електрокара
 					</div>
 					<div class="content content__before order__before" id="trigger2">
 						Замовлення
@@ -142,10 +145,10 @@
 					<div class="red-line"></div>
 					<div class="scrolling-line"></div>
 				</div>
+				<div class="tesla-model-x__black"></div>
+				<div class="tesla-model-s__red"></div>
+				<div class="tesla-model-s__gray"></div>
 			</div>
-			<div class="tesla-model-x__black"></div>
-			<div class="tesla-model-s__red"></div>
-			<div class="tesla-model-s__gray"></div>
 		</div>
 		<div class="compare">
 			<h1 class="compare-tittle">ЯКУ TESLA КРАЩЕ ОБРАТИ?</h1>
@@ -165,14 +168,397 @@
 				</button>
 			</div>
 		</div>
-		<div></div>
-		<div></div>
-		<footer></footer>
+		<div id="thirdBanner" class="banner third third-banner">
+			<h2 class="category-title">Наші послуги при замовленні</h2>
+			<div class="container grid-container">
+				<div class="row reveal">
+					<div class="service step-one">
+						<div class="title">Доставка "під ключ"</div>
+						<p>
+							Для вашої максимальної зручності ми можемо допомогти вам з
+							придбанням автомобіля та організацією доставки на всіх етапах
+						</p>
+					</div>
+					<div class="service step-two">
+						<div class="title">Юридичний договір</div>
+						<p>
+							Якщо ви бажаєте придбати Tesla за допомогою Tesla Club Ukraine, ми
+							підпишемо з вами договір про постачання на фізичну чи юридичну
+							особу
+						</p>
+					</div>
+				</div>
+				<div class="row reveal2">
+					<div class="service step-three">
+						<div class="title">Експертиза та спосіб заряджання</div>
+						<p>
+							Офіційна позиція Tesla – виключно прямі продажі з заводу, без
+							дилерів, які перепродають нові автомобілі. Тому ми не пропонуємо
+							авто в наявності в Україні, але можемо проконсультувати з усіх
+							питань купівлі, експлуатації, страхування та підготовки місця для
+							заряджання автомобіля.
+						</p>
+						<p>
+							Наш інженер може виїхати до вас для того, щоб підібрати оптимальне
+							рішення стосовно зарядної станції з урахуванням наявних
+							електричних лімітів, графіку експлуатації та бюджету. У нас є
+							рішення на всі випадки: від приватного гаража до паркінгу в
+							багатоквартирному будинку.
+						</p>
+					</div>
+					<div class="service step-four">
+						<div class="title">Консультування з усіх питань</div>
+						<p>Також, ми з радістю надамо вам консультації стосовно:</p>
+						<ul>
+							<li>Вибору комплектації</li>
+							<li>Транспортування</li>
+							<li>Здійснення платежів для фізичної або юридичної особи</li>
+							<li>Митного оформлення</li>
+							<li>Реєстрації</li>
+							<li>
+								Під’єднання автомобіля до постійного доступу до Інтернету в
+								Україні
+							</li>
+							<li>
+								Під’єднання і налаштування мобільного додатку для дистанційного
+								моніторингу
+							</li>
+							<li>Консультація і допомога з питань гарантійного ремонту</li>
+						</ul>
+					</div>
+				</div>
+				<button type="button" class="button active">Консультація</button>
+			</div>
+		</div>
+		<div class="locations">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5444727.809804137!2d25.904088012097393!3d48.2151193165818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d1d9c154700e8f%3A0x1068488f64010!2z0KPQutGA0LDQuNC90LA!5e0!3m2!1sru!2sua!4v1710595737765!5m2!1sru!2sua"
+				width="100%"
+				height="100%"
+				style="border: 0"
+				allowfullscreen=""
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+			></iframe>
+			<div class="join reveal3">
+				<p>Ваш бізнес може стати партнером платформи GO TO-U</p>
+				<a onclick="location.href" class="button active" target="_blank"
+					>Приєднатися</a
+				>
+			</div>
+		</div>
+		<div class="news">
+			<h2 class="category-title">Новини</h2>
+			<div class="container">
+				<div class="row row-news reveal4">
+					<div class="news-elements">
+						<div class="item">
+							<img
+								src="public/images/news/news_1.jpeg"
+								alt=""
+								class="img-news"
+							/>
+							<h4>Skoda представила <br />...</h4>
+							<span>15.03.2024 р. </span>
+							<p>
+								Компанія Skoda розсекретила новий електричний кросовер під
+								назвою Epiq. Компактна модель дебютувала у статусі прототипу,
+								але серійний варіант з'явиться у продажу вже у 2025 році.
+								Виробник ...
+							</p>
+							<span>Детальніше</span>
+						</div>
+					</div>
+					<div class="news-elements">
+						<div class="item">
+							<img
+								src="public/images/news/news_2.jpeg"
+								alt=""
+								class="img-news"
+							/>
+							<h4>
+								Євросоюз введе <br />
+								...
+							</h4>
+							<span>15.03.2024 р. </span>
+							<p>
+								Єврокомісія заявила, що уряд КНР субсидує експорт китайських
+								електромобілів до Європи. Стверджується, що слідчі найвищого
+								органу виконавчої влади ЄС виявили <br />...
+							</p>
+							<span>Детальніше</span>
+						</div>
+					</div>
+					<div class="news-elements">
+						<div class="item">
+							<img
+								src="public/images/news/news_3.png"
+								alt=""
+								class="img-news"
+							/>
+							<h4>
+								BMW та Mercedes-Benz
+								<br />
+								...
+							</h4>
+							<span>15.03.2024 р. </span>
+							<p>
+								Mercedes-Benz та BMW cтворили в Пекіні спільне підприємство під
+								назвою Beijing Ion Qi New Energy Technology, пише CarNewsChina.
+								Мета об'єднання створення нової розгалуженої мережі<br />...
+							</p>
+							<span>Детальніше</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row row-footer">
+					<div class="info">
+						<a href="/" class="logo" style="width: 150px"
+							><img
+								class="img-responsive"
+								src="/public/images/tesla-club-logo-full.svg"
+								alt="Tesla Club Ukraine"
+						/></a>
+
+						<a class="mail" href="mailto:mail@tesla-club.com.ua"
+							><span>
+								<img
+									class="icon"
+									src="/public/images/sprites/mailIcon.webp"
+									alt="Mail Icon"
+								/>
+								mail@tesla-club.com.ua</span
+							></a
+						>
+						<a class="phone" href="tel:+380985711414"
+							><span>
+								<img
+									class="icon"
+									src="/public/images/sprites/phoneIcon.webp"
+									alt="Phone Icon"
+								/>
+								+38 (098) 571-1414</span
+							></a
+						>
+						<a
+							class="address"
+							href="https://www.google.com.ua/maps/place/Tesla+Club+Ukraine,+вулиця+Наукова,+7Б,+Львів,+Львівська+область,+79060/@49.980397,27.3272243,6z/data=!4m5!1m2!2m1!1stesla+club+ukraine!3m1!1s0x473ae7e1c27138fb:0x25bf0fbf30ba8de8"
+							target="_blank"
+						>
+							<span
+								><img
+									style="width: 25px; height: 25px"
+									class="icon"
+									src="/public/images/sprites/address.svg"
+									alt="Address Icon"
+								/>
+								вулиця Наукова, 7Б, Львів, Львівська область, 79060</span
+							>
+						</a>
+
+						<div class="social-link">
+							<a
+								class="social-logo"
+								href="https://www.facebook.com/teslaclubukraine"
+								target="_blank"
+								><img
+									class="social-img"
+									src="/public/images/facebook.png"
+									alt="Facebook"
+							/></a>
+							<a
+								class="social-logo"
+								href="https://www.instagram.com/tesla_club_ukraine"
+								target="_blank"
+								><img
+									class="social-img"
+									src="/public/images/insta.png"
+									alt="Instagram"
+							/></a>
+							<a
+								class="social-logo"
+								href="https://twitter.com/club_ukraine?fbclid=IwAR0Gc6ntodZ2RBmQ2_NA1BRi6jz_xerugjXpP4TT1vGjRKaMVSyHo4TfLH8"
+								target="_blank"
+								><img
+									class="social-img"
+									src="/public/images/twitter.png"
+									alt="Twitter"
+								/>
+							</a>
+						</div>
+					</div>
+
+					<div class="nav-footer">
+						<div class="category">
+							<div class="col1">
+								<a class="upper-title" href="#">Гарантія</a>
+								<div class="upper-title">
+									<span class="upper-title">Заряджання</span>
+									<ul class="sub-category">
+										<li>
+											<a
+												href="https://www.go-tou.com/ua/shop/chargers"
+												target="_blank"
+												>Зарядки</a
+											>
+										</li>
+										<li>
+											<a href="https://tesla-club.com.ua/infrastructure"
+												>Інфраструктура</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="cols">
+								<a class="upper-title" href="#thirdBanner">Наші Послуги</a>
+								<li class="upper-title">
+									<span class="upper-title">Tesla в Україні</span>
+									<ul class="sub-category">
+										<li>
+											<a
+												href="https://tesla-club.com.ua/electric-vehicles/tesla-model-s"
+												>Model S</a
+											>
+										</li>
+										<li>
+											<a
+												href="https://tesla-club.com.ua/electric-vehicles/tesla-model-3"
+												>Model 3</a
+											>
+										</li>
+										<li>
+											<a
+												href="https://tesla-club.com.ua/electric-vehicles/tesla-model-x"
+												>Model X</a
+											>
+										</li>
+										<li>
+											<a
+												href="https://tesla-club.com.ua/electric-vehicles/tesla-model-y"
+												>Model Y</a
+											>
+										</li>
+										<li></li>
+										<span class="upper-title"
+											><a href="https://tesla-club.com.ua/accessories"
+												>Аксесуари для EV</a
+											></span
+										>
+									</ul>
+								</li>
+							</div>
+							<div class="col3">
+								<a class="upper-title" href="/#deliveryTerms"
+									>Швидка доставка</a
+								>
+								<li class="upper-title">
+									<span class="upper-title">Електромобілі</span>
+									<ul class="sub-category">
+										<li>
+											<a
+												href="https://tesla-club.com.ua/electric-vehicles/bmw-i3"
+												>BMW i3</a
+											>
+										</li>
+										<li>
+											<a
+												href="https://tesla-club.com.ua/electric-vehicles/nissan-leaf-2018"
+												>Nissan Leaf 2018</a
+											>
+										</li>
+										<li>
+											<a
+												href="https://tesla-club.com.ua/electric-vehicles/nissan-leaf-2015"
+												>Nissan Leaf</a
+											>
+										</li>
+										<li>
+											<a
+												href="https://tesla-club.com.ua/electric-vehicles/kia-soul"
+												>Kia Soul</a
+											>
+										</li>
+										<li>
+											<a
+												href="https://tesla-club.com.ua/electric-vehicles/hyundai-ioniq"
+												>Hyundai Ioniq</a
+											>
+										</li>
+										<li>
+											<a
+												href="https://tesla-club.com.ua/electric-vehicles/hyundai-kona-electric"
+												>Hyundai Kona Electric</a
+											>
+										</li>
+										<li>
+											<a
+												href="https://tesla-club.com.ua/electric-vehicles/volkswagen-e-golf"
+												>VW e-Golf</a
+											>
+										</li>
+										<li>
+											<a
+												href="https://tesla-club.com.ua/electric-vehicles/renault-zoe"
+												>Renault Zoe</a
+											>
+										</li>
+										<li>
+											<a
+												href="https://tesla-club.com.ua/electric-vehicles/chevrolet-bolt"
+												>Chevrolet Bolt</a
+											>
+										</li>
+										<li>
+											<a
+												href="https://tesla-club.com.ua/electric-vehicles/fiat-500e"
+												>Fiat 500e</a
+											>
+										</li>
+										<li>
+											<a
+												href="https://tesla-club.com.ua/electric-vehicles/smart-ev"
+												>Smart Electric</a
+											>
+										</li>
+										<li>
+											<a
+												href="https://tesla-club.com.ua/electric-vehicles/jaguar-i-pace"
+												>Jaguar I-Pace</a
+											>
+										</li>
+									</ul>
+								</li>
+							</div>
+						</div>
+					</div>
+					<div class="disclaimer">
+						<span>DISCLAIMER</span>
+						<p>
+							Tesla Club Ukraine is not affiliated with or endorsed by Tesla
+							Motors, Inc. It is neither inferred nor implied that content here
+							are authorized by or in any way connected to Tesla Motors, Inc.
+							All manufacturer names, symbols, and descriptions used in our
+							images and text are used solely for identification purposes only.
+							Tesla Model S, Tesla Model X and Tesla Roadster are trade marks of
+							Tesla Motors, Inc. © Tesla Club Ukraine 2016
+						</p>
+					</div>
+					<p class="copyright">© TeslaClub, 2014-2023.</p>
+				</div>
+			</div>
+		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 		<script src="js/main script.js"></script>
 		<script src="js/scroll animation.js"></script>
 		<script src="js/red line animation.js"></script>
+		<script src="js/animation.js"></script>
 	</body>
 </html>
