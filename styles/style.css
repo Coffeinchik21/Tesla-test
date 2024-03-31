@@ -155,6 +155,7 @@ h1 {
     object-fit: cover;
 }
 .hidden {
+	display: none;
     opacity: 0;
     transition: opacity 0.3s ease; 
 }
@@ -556,7 +557,7 @@ h1 {
 }
 .registration__icon {
 	background-position: 100%;
-	align-self: end;
+	align-self: center;
 }
 .content__before {
 	font-family: 'GothamProMedium';
@@ -1262,45 +1263,179 @@ footer > div > div > div:first-child a > span {
 }
 @media (max-width: 767px) {
 	.first-steps__icon{grid-area: zxc1;
-		justify-self: start;}
-	.car-selection__icon{grid-area: zxc2;}
-	.pre-payment__icon{grid-area: zxc3;}
-	.order__icon{grid-area: zxc4;}
-	.guarantee__icon{grid-area: zxc5;}
-	.second-steps__icon{grid-area: zxc6;}
-	.delivery-time__icon{grid-area: zxc7;}
-	.third-steps__icon{grid-area: zxc8;}
-	.delivery-process__icon{grid-area: zxc9;}
-	.fourth-steps__icon{grid-area: zxc10;}
-	.transportation__icon{grid-area: zxc11;}
-	.customs-clearence__icon{grid-area: zxc12;}
-	.insurance__icon{grid-area: zxc13;}
-	.registration__icon{grid-area: zxc14;}
+		justify-self: start;
+		display: grid;
+		margin-left: 13px;
+	}
+	.first-steps__icon p{
+		height: 30px;
+		align-self: center;
+		line-height: 100%;
+	}
+	.car-selection__icon{grid-area: zxc2;
+		width: 64px;
+		height: 64px;
+		justify-self: center;
+		margin-left: 16px;	
+	}
+	.pre-payment__icon{grid-area: zxc3;
+		width: 64px;
+		height: 64px;
+		justify-self: center;
+		margin-left: 16px;
+	}
+	.order__icon{grid-area: zxc4;
+		width: 64px;
+		height: 64px;
+		justify-self: center;
+		margin-left: 16px;
+	}
+	.guarantee__icon{grid-area: zxc5;
+		width: 64px;
+		height: 64px;
+		justify-self: center;
+		margin-left: 16px;
+	}
+	.second-steps__icon{grid-area: zxc6;
+		justify-self: start;
+		display: grid;
+		margin-left: 13px;
+	}
+	.second-steps__icon p{
+		height: 30px;
+		align-self: center;
+		line-height: 100%;
+	}
+	.delivery-time__icon{grid-area: zxc7;
+		width: 64px;
+		height: 64px;
+		justify-self: center;
+		margin-left: 16px;
+	}
+	.third-steps__icon{grid-area: zxc8;
+		justify-self: start;
+		display: grid;
+		margin-left: 13px;
+	}
+	.third-steps__icon p{
+		height: 30px;
+		align-self: center;
+		line-height: 100%;
+	}
+	.delivery-process__icon{grid-area: zxc9;
+		width: 64px;
+		height: 64px;
+		justify-self: center;
+		margin-left: 16px;
+	}
+	.fourth-steps__icon{grid-area: zxc10;
+		justify-self: start;
+		display: grid;
+		margin-left: 13px;
+	}
+	.fourth-steps__icon p{
+		height: 30px;
+		align-self: center;
+		line-height: 100%;
+	}
+	.transportation__icon{grid-area: zxc11;
+		width: 64px;
+		height: 64px;
+		justify-self: center;
+		margin-left: 16px;
+	}
+	.customs-clearence__icon{grid-area: zxc12;
+		width: 64px;
+		height: 64px;
+		justify-self: center;
+		margin-left: 16px;
+	}
+	.insurance__icon{grid-area: zxc13;
+		width: 64px;
+		height: 64px;
+		justify-self: center;
+		margin-left: 16px;
+	}
+	.registration__icon{grid-area: zxc14;
+		width: 64px;
+		height: 64px;
+		justify-self: center;
+		margin-left: 16px;
+	}
 	.car-selection__before{grid-area: zxc15;
 		justify-self: start;
-		align-self: center;}
+		text-align: left;
+		align-self: center;
+		padding-right: 15px;
+	}
 	.car-selection__after{grid-area: zxc16;
 		justify-self: center;
 		align-self: center;}
-	.pre-payment__before{grid-area: zxc17;}
-	.pre-payment__after{grid-area: zxc18;}
-	.order__before{grid-area: zxc19;}
+	.pre-payment__before{grid-area: zxc17;
+		justify-self: start;
+		padding-right: 15px;
+		margin-top: 60px;	
+	}
+	.pre-payment__after{grid-area: zxc18;
+		margin-bottom: 60px;
+	}
+	.order__before{grid-area: zxc19;
+		justify-self: start;
+		padding-right: 15px;
+	}
 	.order__after{grid-area: zxc20;}
-	.guarantee__before{grid-area: zxc21;}
-	.guarantee__after{grid-area: zxc22;}
-	.delivery-time__before{grid-area: zxc23;}
+	.guarantee__before{grid-area: zxc21;
+		justify-self: start;
+		padding-right: 15px;
+		margin-top: 60px;
+	}
+	.guarantee__after{grid-area: zxc22;
+		margin-bottom: 60px;
+	}
+	.delivery-time__before{grid-area: zxc23;
+		justify-self: start;
+		padding-right: 15px;
+	}
 	.delivery-time__after{grid-area: zxc24;}
-	.delivery-process__before{grid-area: zxc25;}
+	.delivery-process__before{grid-area: zxc25;
+		text-align: left;
+		padding-right: 15px;
+	}
 	.delivery-process__after{grid-area: zxc26;}
-	.transportation__before{grid-area: zxc27;}
+	.transportation__before{grid-area: zxc27;
+		justify-self: start;
+		text-align: left;
+		padding-right: 15px;
+	}
 	.transportation__after{grid-area: zxc28;}
-	.customs-clearence__before{grid-area: zxc29;}
-	.customs-clearence__after{grid-area: zxc30;}
-	.insurance__before{grid-area: zxc31;}
+	.customs-clearence__before{grid-area: zxc29;
+		justify-self: start;
+		text-align: left;
+		padding-right: 15px;
+		margin-top: 60px;
+	}
+	.customs-clearence__after{grid-area: zxc30;
+		margin-bottom: 60px;
+	}
+	.insurance__before{grid-area: zxc31;
+		justify-self: start;
+		padding-right: 15px;
+	}
 	.insurance__after{grid-area: zxc32;}
-	.car-selection__before2{grid-area: zxc33;}
-	.car-selection__after2{grid-area: zxc34;}
-	.registration__before{grid-area: zxc35;}
+	.car-selection__before2{grid-area: zxc33;
+		justify-self: start;
+		text-align: left;
+		padding-right: 15px;
+		margin-top: 60px;
+	}
+	.car-selection__after2{grid-area: zxc34;
+		margin-bottom: 60px;
+	}
+	.registration__before{grid-area: zxc35;
+		justify-self: start;
+		text-align: left;
+		padding-right: 15px;
+	}
 	.registration__after{grid-area: zxc36;}
 
 	.purchase-container{
@@ -1308,8 +1443,9 @@ footer > div > div > div:first-child a > span {
 		grid-template-rows: auto;
 	}
 	.steps__container {
-		gap: 0 0;
-		grid-template-columns: 1fr 3fr;
+		gap: 0 20px;
+		justify-items: start;
+		grid-template-columns: min-content 3fr;
 		grid-template-rows: repeat(22, auto);
 		grid-template-areas: 
 		"zxc1 zxc1"
@@ -1337,9 +1473,9 @@ footer > div > div > div:first-child a > span {
 		;
 	}
 	.steps__container2{
-		margin-top: 4px;
-		gap: 0 0;
-		grid-template-columns: 1fr 3fr;
+		margin: 0;
+		gap: 0 20px;
+		grid-template-columns: min-content 3fr;
 		grid-template-rows: repeat(4, auto);
 		grid-template-areas: 
 		"zxc14 zxc33"

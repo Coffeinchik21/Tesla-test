@@ -16,7 +16,7 @@ var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 0, o
     new ScrollMagic.Scene()
                     .setClassToggle(".contact-number__item", "contact-number__item--active")
 					.addTo(controller);
-var controller2 = new ScrollMagic.Controller({globalSceneOptions: {duration: 0, offset: 800}});
+var controller2 = new ScrollMagic.Controller({globalSceneOptions: {duration: 0, offset: 1500}});
     new ScrollMagic.Scene()
                     .setClassToggle(".video__self", "hidden")
 					.addTo(controller2);
