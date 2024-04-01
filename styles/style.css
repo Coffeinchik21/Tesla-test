@@ -574,7 +574,7 @@ h1 {
 .red-line {
 	position: absolute;
 	width: 3px;
-	height: 100%;
+	height: 99%;
 	background-color: #e60002;
 	left: 50%;
 	transform: translateX(-50%);
